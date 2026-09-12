@@ -1,5 +1,7 @@
 # Fluenary
 
+**Tiếng Việt** | [English](README.en.md)
+
 Base Flutter app (mobile only: Android + iOS) dùng **Flutter 3.47.0 / Dart 3.13**, kiến trúc feature-first với Bloc/Cubit, 3 flavor `dev` / `stg` / `prod`.
 
 Mục tiêu: clone ra dự án mới trong vài phút — mọi thứ cross-cutting (env, network, DI, logging, theme, i18n, router, error handling) đã được wiring sẵn.
