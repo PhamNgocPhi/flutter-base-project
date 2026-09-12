@@ -1,0 +1,89 @@
+name: fluenary
+description: "A new Flutter project."
+publish_to: 'none'
+version: 0.1.0+1
+
+environment:
+  sdk: ^3.13.0
+
+dependencies:
+  bloc: ^9.2.1
+  dio: ^5.11.1
+  envied: ^1.3.8
+  equatable: ^2.1.0
+  flutter:
+    sdk: flutter
+  flutter_bloc: ^9.1.1
+  flutter_localizations:
+    sdk: flutter
+  flutter_secure_storage: ^11.1.0
+  freezed_annotation: ^3.1.0
+  get_it: ^9.2.1
+  go_router: ^18.0.1
+  intl: ^0.20.3
+  json_annotation: ^4.12.0
+  shared_preferences: ^2.5.5
+  talker: ^5.1.20
+  talker_bloc_logger: ^5.1.20
+  talker_dio_logger: ^5.1.20
+  talker_flutter: ^5.1.20
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_lints: ^6.0.0
+  build_runner: ^2.16.1
+  envied_generator: ^1.3.8
+  freezed: ^4.0.1
+  json_serializable: ^6.14.1
+  intl_utils: ^2.8.16
+  mocktail: ^1.0.5
+  bloc_test: ^10.0.0
+  flutter_flavorizr: ^2.5.0
+
+flutter:
+  uses-material-design: true
+
+# Cấu hình flutter_intl (IDE plugin) / intl_utils (CLI: dart run intl_utils:generate)
+flutter_intl:
+  enabled: true
+  main_locale: vi
+  arb_dir: lib/l10n
+  output_dir: lib/generated
+  class_name: S
+
+# Cấu hình flavor: dart run flutter_flavorizr (chỉ chạy lại khi thêm/sửa flavor)
+flavorizr:
+  ide: idea
+  instructions:
+    - android:androidManifest
+    - android:buildGradle
+    - android:flavorizrGradle
+    - ios:xcconfig
+    - ios:buildTargets
+    - ios:schema
+    - ios:plist
+    - ios:podfile
+    - ide:config
+  flavors:
+    dev:
+      app:
+        name: "Fluenary Dev"
+      android:
+        applicationId: "com.phipham.fluenary.dev"
+      ios:
+        bundleId: "com.phipham.fluenary.dev"
+    stg:
+      app:
+        name: "Fluenary Stg"
+      android:
+        applicationId: "com.phipham.fluenary.stg"
+      ios:
+        bundleId: "com.phipham.fluenary.stg"
+    prod:
+      app:
+        name: "Fluenary"
+      android:
+        applicationId: "com.phipham.fluenary"
+      ios:
+        bundleId: "com.phipham.fluenary"

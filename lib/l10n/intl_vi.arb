@@ -1,0 +1,23 @@
+{
+  "@@locale": "vi",
+  "appName": "Fluenary",
+  "home": "Trang chủ",
+  "settings": "Cài đặt",
+  "example": "Ví dụ (Bloc + Clean Architecture)",
+  "logs": "Nhật ký (Talker)",
+  "retry": "Thử lại",
+  "login": "Đăng nhập",
+  "logout": "Đăng xuất",
+  "email": "Email",
+  "password": "Mật khẩu",
+  "loginMockHint": "Mock: nhập email/mật khẩu bất kỳ. Access token hết hạn sau 1 phút để test refresh.",
+  "sessionExpired": "Phiên đăng nhập đã hết hạn, vui lòng đăng nhập lại",
+  "theme": "Giao diện",
+  "themeSystem": "Theo hệ thống",
+  "themeLight": "Sáng",
+  "themeDark": "Tối",
+  "counter": "Bạn đã nhấn {count} lần",
+  "@counter": {"placeholders": {"count": {"type": "int"}}},
+  "environment": "Môi trường: {name}",
+  "@environment": {"placeholders": {"name": {"type": "String"}}}
+}
